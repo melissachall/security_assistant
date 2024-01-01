@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Open Ports Results</title>
+</head>
+
+<body>
+    <h2>Open Ports on the Machine:</h2>
+    {% for port, status in open_ports %}
+    <p>Port {{ port }}: {{ status }}</p>
+    {% endfor %}
+</body>
+
+</html>

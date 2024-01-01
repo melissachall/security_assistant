@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Active Machines</title>
+</head>
+
+<body>
+    <h2>Active Machines on the Network:</h2>
+    {% for machine in active_machines %}
+    <p>{{ machine }}</p>
+    {% endfor %}
+</body>
+
+</html>

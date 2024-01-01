@@ -1,0 +1,25 @@
+<!-- my_network_security_project/network_security/templates/base.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Network Security Project</title>
+</head>
+
+<body>
+    <nav>
+        <a href="{% url 'network_security:home' %}">Home</a>
+        <!-- Ajoutez ces liens -->
+        <a href="{% url 'network_security:login' %}">Login</a>
+        <a href="{% url 'network_security:register' %}">Register</a>
+        <!-- Fin des liens d'authentification -->
+        <!-- Ajoutez d'autres liens de navigation au besoin -->
+    </nav>
+
+    {% block content %}
+    <!-- Le contenu de chaque page sera ajouté ici -->
+    {% endblock %}
+</body>
+
+</html>

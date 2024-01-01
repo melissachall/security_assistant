@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Network Map</title>
+</head>
+
+<body>
+    <h2>Network Map</h2>
+
+    {% if network_map_image %}
+    <img src="{{ network_map_image }}" alt="Network Map"> {% else %}
+    <p>No active machines found on the network.</p>
+    {% endif %}
+
+    <!-- You can add more content or styling as needed -->
+
+</body>
+
+</html>

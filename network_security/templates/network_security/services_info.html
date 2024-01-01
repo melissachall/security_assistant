@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Network Map</title>
+</head>
+
+<body>
+    <h2>Network Topology Map</h2>
+
+    {% if services_info %}
+    <h3>Services Information:</h3>
+    <ul>
+        {% for port, info in services_info.items %}
+        <li>
+            <strong>Port {{ port }}:</strong> {{ info.get('banner', 'Service non identifié') }}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No information available for services.</p>
+    {% endif %}
+
+    <!--  ajouter ici du contenu supplémentaire si nécessaire -->
+</body>
+
+</html>

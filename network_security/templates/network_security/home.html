@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Welcome to My Network Security Project</h2>
+<p>This is the home page of our network security application.</p>
+<p>Explore the following features:</p>
+<ul>
+    <li><a href="{% url 'network_security:network_map' %}">Network Map</a></li>
+    <li><a href="{% url 'network_security:host_enumeration' %}">Host Enumeration</a></li>
+    <li><a href="{% url 'network_security:os_detection' %}">OS Detection</a></li>
+    <li><a href="{% url 'network_security:port_scanning' %}">Port Scanning</a></li>
+    <li><a href="{% url 'network_security:service_identification' %}">Service Identification</a></li>
+    <!-- Ajoutez d'autres liens vers vos fonctionnalités ici -->
+</ul>
+{% endblock %}
