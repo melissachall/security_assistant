@@ -72,24 +72,6 @@ Adaptez les paramètres (adresses IP, ports) selon vos besoins dans les fichiers
 
 ---
 
-## 🏷️ Topics GitHub recommandés
-
-- `cybersecurity`
-- `network-security`
-- `cli`
-- `django`
-- `python`
-- `security-tools`
-- `network-mapping`
-- `port-scanner`
-
----
-
-## ❗ Avertissement
-
-Cet outil est destiné à un usage éducatif, de test ou d’audit sur des réseaux dont vous avez l’autorisation. N’utilisez jamais cet outil à des fins malveillantes ou sans consentement explicite.
-
----
 
 ## 🤝 Contribuer
 
