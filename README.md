@@ -33,6 +33,9 @@ Security Assistant est un outil d’analyse et de cartographie de la sécurité 
 
 - Python 3.9+
 - Modules : Django, scapy, networkx, matplotlib, tqdm
+- **Windows uniquement : [Npcap](https://nmap.org/npcap/) doit être installé pour permettre l’utilisation de Scapy et des fonctionnalités réseau avancées.**
+    - Pendant l’installation, cochez l’option "Install Npcap in WinPcap API-compatible Mode".
+    - Redémarrez votre ordinateur après l’installation.
 
 ---
 
@@ -72,6 +75,12 @@ Adaptez les paramètres (adresses IP, ports) selon vos besoins dans les fichiers
 
 ---
 
+## ℹ️ Remarques
+
+- **Npcap** est obligatoire sous Windows pour les fonctionnalités de scan réseau avancées (Scapy, détection d’OS, etc.).
+- Ajoutez `# Npcap doit être installé manuellement sous Windows pour Scapy` dans votre `requirements.txt` pour rappel.
+
+---
 
 ## 🤝 Contribuer
 
