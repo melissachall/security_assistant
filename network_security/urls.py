@@ -1,11 +1,15 @@
+
+app_name = 'network_security'
 from django.urls import path 
 from . import views 
 from .views import( network_map_view, host_enumeration_view, detect_os_view, scan_ports_view, services_info_view,    register_view,
     login_view,
     logout_view,)
 
+app_name = 'network_security'
+
 urlpatterns = [
-    path('login/', views.loginPage, name="login"),
+    #path('login/', views.loginPage, name="login"),
     path('', views.home, name="home"),
      # URL pour la vue de la carte réseau
     path('network-map/', network_map_view, name='network_map'),

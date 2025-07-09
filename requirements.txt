@@ -1,0 +1,10 @@
+# requirements.txt
+Django>=4.0
+networkx
+matplotlib
+scapy
+tqdm
+requests
+reportlab
+pytest
+# Npcap doit être installé manuellement sous Windows pour Scapy

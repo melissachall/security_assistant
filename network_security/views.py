@@ -84,7 +84,7 @@ def register_view(request):
             form.save()
             username = form.cleaned_data.get('username')
             messages.success(request, f'Account created for {username}!')
-            return redirect('login')
+            return redirect('network_security:login')
     else:
         form = UserCreationForm()
     return render(request, 'network_security/register.html', {'form': form})
@@ -99,7 +99,7 @@ def login_view(request):
             if user is not None:
                 login(request, user)
                 messages.info(request, f'You are now logged in as {username}.')
-                return redirect('home')  # Change 'home' to the URL where you want to redirect after login
+                return redirect('network_security:home')  # Change 'home' to the URL where you want to redirect after login
             else:
                 messages.error(request, 'Invalid username or password. Please try again.')
     else:
@@ -108,4 +108,4 @@ def login_view(request):
 
 def logout_view(request):
     logout(request)
-    return redirect('login')
+    return redirect('network_security:login')
